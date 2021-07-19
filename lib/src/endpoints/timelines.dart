@@ -71,7 +71,7 @@ mixin Timelines on Authentication, Utilities implements MockTimelines {
     final response = await request(
       Method.get,
       "/api/v1/timelines/public",
-      authenticated: true,
+      authenticated: false,
       payload: {
         "local": "$local",
         "only_media": "$onlyMedia",
